@@ -1,0 +1,29 @@
+.hero-container {
+  background-color: #001657;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .inner-container {
+    width: 80vw;
+    flex-direction: column;
+  }
+}
+
+.hero-item {
+  border: 1px solid white;
+}
+
+.hero-column {
+  flex-direction: column;
+}
