@@ -1,0 +1,26 @@
+header {
+  background-color: #001657;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    width: 80vw;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: Raleway, Arial;
+  padding: 5px;
+}
