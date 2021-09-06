@@ -5,7 +5,7 @@ import logo from "../img/accrual_white.svg"
 import "./Header.css"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="header">
     <div className="header-container">
       <h1 style={{ margin: 0 }}>
         <Link to="/">

@@ -18,8 +18,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "careers-page"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "job-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Posted Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
 

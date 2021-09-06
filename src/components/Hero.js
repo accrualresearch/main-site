@@ -1,5 +1,6 @@
 import * as React from "react"
 import "./Hero.css"
+import JobRoll from './JobRoll'
 
 const Container = ({ children, bg, text }) => (
   <div className="hero-container" style={{
@@ -64,7 +65,20 @@ export const ConsultingHero = () => (
 
 export const CareersHero = () => (
   <Container bg="black" text="white">
-    <h2>Careers</h2>
+    <div style={{
+      flexDirection: "column"
+    }}>
+      <h1>
+        Join Accrual Research
+      </h1>
+      <p>
+        Looking to join the disruption?
+        Are you looking to apply your unique skillset to projects operating on the frontier of the blockchain industry?
+        If so, come join the disruption. Look below to see available positions.
+        If none of the opening below is a good fit, we still want to hear what makes you stand out - send an email to askus@accrualresearch.com with the subject “Career”.
+      </p>
+      <JobRoll />
+    </div>
   </Container>
 )
 
