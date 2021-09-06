@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Accrual Research`,
+    description: `Accrual Research is helping blockchain disrupt finance.`,
+    author: `@jbarratt77`,
+    siteUrl: `https://accrual-research.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -63,13 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `accrual-research`,
+        short_name: `accrual`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#001657`,
+        theme_color: `#001657`,
         display: `minimal-ui`,
-        icon: `src/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/img/accrual.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-netlify-cms`,
