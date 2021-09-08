@@ -1,6 +1,7 @@
 import * as React from "react"
 import "./Hero.css"
 import JobRoll from './JobRoll'
+import ContactForm from "./ContactForm"
 
 const Container = ({ children, bg, text }) => (
   <div className="hero-container" style={{
@@ -84,7 +85,7 @@ export const CareersHero = () => (
 
 export const ContactHero = () => (
   <Container bg="white" text="black">
-    <h2>Contact</h2>
+    <ContactForm />
   </Container>
 )
 
