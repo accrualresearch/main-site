@@ -28,17 +28,15 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/consulting/index.md"
-        label: "Consulting"
-        name: "consulting"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "consulting-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: About Us, name: about, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Product1, name: product1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Product2, name: product2, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Product3, name: product3, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Product4, name: product4, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Consulting, name: consulting, widget: object, fields: [{label: Heading1, name: heading1, widget: string}, {label: Text1, name: text1, widget: text},{label: Heading2, name: heading2, widget: string}, {label: Text2, name: text2, widget: text},{label: Heading3, name: heading3, widget: string}, {label: Text3, name: text3, widget: text},{label: Heading4, name: heading4, widget: string}, {label: Text4, name: text4, widget: text}]}
+          - {label: Careers, name: careers, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
