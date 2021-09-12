@@ -3,34 +3,54 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import logo from "../img/accrual_white.svg"
 import "./Header.css"
+import heroMp4 from "../img/Hero_video.mp4"
+import heroWebm from "../img/Hero_video.webm"
+import { Hero } from "./Hero"
 
 const Header = ({ siteTitle }) => (
-  <header className="header">
-    <div className="header-container">
-      <h1 style={{ margin: 0 }}>
-        <Link to="/">
-          <img src={logo} width={200} alt={siteTitle} />
+  <>
+    <header className="header">
+      <div className="header-container">
+        <Link to="/" style={{padding: "5px"}}>
+          <img src={logo} width={150} alt={siteTitle} />
         </Link>
-      </h1>
-      <span>
-        <Link to="/about" className="navLink">
-          About
-        </Link>
-        <Link to="/products" className="navLink">
-          Products
-        </Link>
-        <Link to="/consulting" className="navLink">
-          Consulting
-        </Link>
-        <Link to="/careers" className="navLink">
-          Careers
-        </Link>
-        <Link to="/contact" className="navLink">
-          Contact
-        </Link>
-      </span>
-    </div>
-  </header>
+        <ul>
+          <li>
+            <Link to="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/products">
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/consulting">
+              Consulting
+            </Link>
+          </li>
+          <li>
+            <Link to="/careers">
+              Careers
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section className="heroVideoSection">
+      <video className="heroVideo" autoPlay muted loop>
+        <source src={heroMp4} type="video/mp4" />
+        <source src={heroWebm} type="video/webm" />
+      </video>
+      <Hero />
+    </section>
+  </>
 )
 
 Header.propTypes = {

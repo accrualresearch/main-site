@@ -12,29 +12,24 @@ const Container = ({ children, bg, text }) => (
   </div>
 )
 
+
 export const Hero = () => (
-  <Container bg="#001657" text="white">
-    <div
-      className="hero-column hero-item"
-      style={{
-        flexBasis: "75%",
-      }}
-    >
-      <h2>Next Level Blockchain Products</h2>
+  <Container text="white">
+    <div className="hero-column column-1 hero-item">
+      <h1>Next Level Blockchain Products</h1>
     </div>
 
-    <div
-      className="hero-column"
-      style={{
-        flexBasis: "25%",
-      }}
-    >
-      <div className="hero-item">
-        <h2>Consulting</h2>
+    <div className="hero-column column-2">
+      <div style={{height: "50%", paddingBottom: "5px"}}>
+        <div className="hero-item" style={{height: "100%", alignItems: "flex-end"}}>
+          <h2>Consulting</h2>
+        </div>
       </div>
 
-      <div className="hero-item">
-        <h2>Data Driven Analysis</h2>
+      <div style={{height: "50%", paddingTop: "5px"}}>
+        <div className="hero-item" style={{height: "100%", alignItems: "flex-end"}}>
+          <h2>Data Driven Analysis</h2>
+        </div>
       </div>
     </div>
   </Container>

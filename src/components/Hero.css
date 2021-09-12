@@ -7,6 +7,7 @@
 
 .inner-container {
   width: 70vw;
+  height: 70vh;
   display: flex;
   flex-direction: row;
 }
@@ -18,11 +19,30 @@
   }
 }
 
-.hero-item {
-  border: 1px solid white;
-}
-
 .hero-column {
   flex-direction: column;
   flex: 1;
+  margin: 5px;
+}
+
+.column-1 {
+  flex-basis: 75%;
+}
+
+.column-2 {
+  flex-basis: 25%;
+}
+
+.hero-item {
+  display: flex;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 100px rgb(255,255,255,0.3);
+}
+
+.column-1.hero-item {
+  padding: 100px;
+}
+
+.column-2 div.hero-item {
+  padding: 50px;
 }
