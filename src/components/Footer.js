@@ -22,8 +22,8 @@ const Footer = ({ siteTitle }) => (
           <Link className="footer-link-header" to="/products">Product</Link>
 
 
-          <Link to="/products/chainpulse">ChainPulse</Link>
-          <Link to="/products/pulsebot">PulseBot</Link>
+          <Link to="/products/chainpulse">ChainPulse →</Link>
+          <Link to="/products/pulsebot">PulseBot →</Link>
         </div>
         <div className="footer-links-col">
           <Link className="footer-link-header" to="/consulting">Consulting</Link>
@@ -32,14 +32,14 @@ const Footer = ({ siteTitle }) => (
         <div className="footer-links-col">
           <Link className="footer-link-header" to="/careers">Careers</Link>
 
-          <Link to="/careers/it-security">IT Security</Link>
-          <Link to="/careers/software-developer">Software Developer</Link>
+          <Link to="/careers/it-security">IT Security →</Link>
+          <Link to="/careers/software-developer">Software Developer →</Link>
         </div>
         <div className="footer-links-col">
           <Link className="footer-link-header">Links</Link>
 
-          <Link to="https://www.twitter.com/">Twitter</Link>
-          <Link to="https://www.linkedin.com/">LinkedIn</Link>
+          <Link to="https://www.twitter.com/">Twitter →</Link>
+          <Link to="https://www.linkedin.com/">LinkedIn →</Link>
         </div>
       </div>
       <p>© 2021, Accrual Research</p>

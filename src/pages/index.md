@@ -4,11 +4,11 @@ about:
   heading: About Us
   text: Accrual Research is a team of AI engineers, data scientists, economists, and developers. The team is spread across three continents with offices in Singapore, India and the U.S.
 product1:
-  heading: ChainPulse
-  text: A product offering industry leading tools and research for investors.
-product2:
   heading: PulseBot
   text: High frequency trading infrastructure and order execution management services (OEMS).
+product2:
+  heading: ChainPulse
+  text: A product offering industry leading tools and research for investors.
 product3:
   heading: PulseDetect
   text: Services geared towards government agencies, businesses, and insurance companies looking for blockchain investigation and compliance solutions

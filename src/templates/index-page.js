@@ -4,6 +4,20 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import JobRoll from '../components/JobRoll'
+import Hero from "../components/Hero"
+import "./index-page.css"
+import ContactForm from "../components/ContactForm"
+
+import aboutImage from "../img/aboutImage.png"
+
+const Container = ({ children, bg, text, width }) => (
+  <section className="section-container" style={{
+    backgroundColor: bg,
+    color: text
+  }}>
+    <div className="section-inner">{children}</div>
+  </section>
+)
 
 export const IndexPageTemplate = ({
   about,
@@ -14,8 +28,117 @@ export const IndexPageTemplate = ({
   consulting,
   careers,
 }) => (
-  <div>
-  </div>
+  <>
+    <Container bg="black" text="white">
+      <div style={{width: "60%"}}>
+        <h1>{about.heading}</h1>
+        <p>{about.text}</p>
+      </div>
+      <img src={aboutImage} />
+    </Container>
+    <div className="exploreProducts">
+      <div className="exploreText">
+        <div style={{width:"100%",height:"40%"}}></div>
+        <h1 style={{margin: 0}}>Explore</h1>
+        <h1>Our Products</h1>
+      </div>
+    </div>
+    <div className="product-container pulsebot">
+      <div className="product-inner">
+        <div className="product-item"></div>
+        <div className="product-item">
+          <h1>{product1.heading}</h1>
+          <p>{product1.text}</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="product-container chainpulse" style={{backgroundColor: "black"}}>
+      <div className="product-inner">
+        <div className="product-item" style={{color: "white"}}>
+          <h1>{product2.heading}</h1>
+          <p>{product2.text}</p>
+        </div>
+        <div className="product-item"></div>
+      </div>
+    </div>
+
+    <div className="consulting-container">
+      <div className="consulting-inner">
+
+        <div className="consulting-row">
+          <h1>Consulting with Perspective</h1>
+        </div>
+        <div className="consulting-row">
+          <div className="consulting-column" style={{flexBasis: "10%"}}>
+            
+          </div>
+          <div className="consulting-column" style={{flexBasis: "90%"}}>
+            <div className="consulting-item">
+              <h2>{consulting.heading1}</h2>
+            </div>
+            <div className="consulting-item">
+              <p>{consulting.text1}</p>
+            </div>
+          </div>
+        </div>
+        <div className="consulting-row">
+          <div className="consulting-column" style={{flexBasis: "10%"}}>
+
+          </div>
+          <div className="consulting-column" style={{flexBasis: "90%"}}>
+            <div className="consulting-item">
+              <h2>{consulting.heading2}</h2>
+            </div>
+            <div className="consulting-item">
+              <p>{consulting.text2}</p>
+            </div>
+          </div>
+        </div>
+        <div className="consulting-row">
+          <div className="consulting-column" style={{flexBasis: "10%"}}>
+
+          </div>
+          <div className="consulting-column" style={{flexBasis: "90%"}}>
+            <div className="consulting-item">
+              <h2>{consulting.heading3}</h2>
+            </div>
+            <div className="consulting-item">
+              <p>{consulting.text3}</p>
+            </div>
+          </div>
+        </div>
+        <div className="consulting-row">
+          <div className="consulting-column" style={{flexBasis: "10%"}}>
+
+          </div>
+          <div className="consulting-column" style={{flexBasis: "90%"}}>
+            <div className="consulting-item">
+              <h2>{consulting.heading4}</h2>
+            </div>
+            <div className="consulting-item">
+              <p>{consulting.text4}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div className="careers-container">
+      <div className="careers-inner">
+        <h1>{careers.heading}</h1>
+        <p>{careers.text}</p>
+        <JobRoll />
+      </div>
+    </div>
+
+    <div className="contact-container">
+      <div className="contact-inner">
+        <ContactForm />
+      </div>
+    </div>
+  </>
 )
 
 IndexPageTemplate.propTypes = {
@@ -33,6 +156,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Hero />
       <IndexPageTemplate
         about={frontmatter.about}
         product1={frontmatter.product1}

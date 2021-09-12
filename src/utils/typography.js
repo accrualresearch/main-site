@@ -5,14 +5,16 @@ const typography = new Typography({
   headerFontFamily: ["Raleway"],
   bodyFontFamily: ["Raleway"],
   overrideStyles: () => ({
-    img: {
+    "img,ul,li": {
       marginBottom: 0
     },
-    ul: {
-      marginBottom: 0
+    "h1": {
+      fontWeight: 900,
+      fontSize: "60px"
     },
-    li: {
-      marginBottom: 0
+    "h2": {
+      fontWeight: 900,
+      fontSize: "40px"
     }
   })
 })

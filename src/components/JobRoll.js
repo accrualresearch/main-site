@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import "./JobRoll.css"
 
 class JobRoll extends React.Component {
   render() {
@@ -8,28 +9,24 @@ class JobRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div>
+      <div className="jobroll-container">
         {posts &&
           posts.map(({ node: post }) => (
-            <div key={post.id}>
-              <article>
+            <div key={post.id} className="job-container">
+              <article className="job-inner">
                 <header>
-                  <p>
-                    <Link to={post.fields.slug}>
+                  <h2>
+                    <Link className="job-link" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span>
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
+                  </h2>
                 </header>
                 <p>
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
+                  <Link className="job-link" to={post.fields.slug}>
+                    →
                   </Link>
                 </p>
               </article>

@@ -1,9 +1,9 @@
 import * as React from "react"
 import "./Hero.css"
-import JobRoll from './JobRoll'
-import ContactForm from "./ContactForm"
+import heroMp4 from "../img/Hero_video.mp4"
+import heroWebm from "../img/Hero_video.webm"
 
-const Container = ({ children, bg, text }) => (
+export const Container = ({ children, bg, text }) => (
   <div className="hero-container" style={{
     backgroundColor: bg,
     color: text
@@ -13,10 +13,10 @@ const Container = ({ children, bg, text }) => (
 )
 
 
-export const Hero = () => (
+const Grid = () => (
   <Container text="white">
     <div className="hero-column column-1 hero-item">
-      <h1>Next Level Blockchain Products</h1>
+      <h1>Next Level <br /> Blockchain Products</h1>
     </div>
 
     <div className="hero-column column-2">
@@ -35,52 +35,16 @@ export const Hero = () => (
   </Container>
 )
 
-export const AboutHero = () => (
-  <Container bg="black" text="white">
-    <h2>About Us</h2>
-  </Container>
+const Hero = () => (
+  <>
+    <section className="heroVideoSection">
+      <video className="heroVideo" autoPlay muted loop>
+        <source src={heroMp4} type="video/mp4" />
+        <source src={heroWebm} type="video/webm" />
+      </video>
+      <Grid />
+    </section>
+  </>
 )
 
-export const PulseBotHero = () => (
-  <Container bg="white" text="black">
-    <h2>PulseBot</h2>
-  </Container>
-)
-
-export const ChainPulseHero = () => (
-  <Container bg="black" text="white">
-    <h2>ChainPulse</h2>
-  </Container>
-)
-
-export const ConsultingHero = () => (
-  <Container bg="white" text="black">
-    <h2>Excellent Consulting</h2>
-  </Container>
-)
-
-export const CareersHero = () => (
-  <Container bg="black" text="white">
-    <div style={{
-      flexDirection: "column"
-    }}>
-      <h1>
-        Join Accrual Research
-      </h1>
-      <p>
-        Looking to join the disruption?
-        Are you looking to apply your unique skillset to projects operating on the frontier of the blockchain industry?
-        If so, come join the disruption. Look below to see available positions.
-        If none of the opening below is a good fit, we still want to hear what makes you stand out - send an email to askus@accrualresearch.com with the subject “Career”.
-      </p>
-      <JobRoll />
-    </div>
-  </Container>
-)
-
-export const ContactHero = () => (
-  <Container bg="white" text="black">
-    <ContactForm />
-  </Container>
-)
-
+export default Hero
