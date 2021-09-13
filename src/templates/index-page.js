@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
     </div>
 
     <div className="container explore">
-      <div classNae="inner">
+      <div className="inner">
         <div className="exploreText">
           <div style={{width:"100%",height:"40%"}}></div>
           <h1 style={{margin: 0}}>Explore</h1>
