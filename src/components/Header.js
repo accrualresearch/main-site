@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import logo from "../img/accrual_white.svg"
 import "./Header.css"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = ({ siteTitle }) => (
   <header className="header">
@@ -12,29 +13,29 @@ const Header = ({ siteTitle }) => (
       </Link>
       <ul>
         <li>
-          <Link to="/about">
+          <AnchorLink to="#about">
             About
-          </Link>
+          </AnchorLink>
         </li>
         <li>
-          <Link to="/products">
+          <AnchorLink to="#products">
             Products
-          </Link>
+          </AnchorLink>
         </li>
         <li>
-          <Link to="/consulting">
+          <AnchorLink to="#consulting">
             Consulting
-          </Link>
+          </AnchorLink>
         </li>
         <li>
-          <Link to="/careers">
+          <AnchorLink to="#careers">
             Careers
-          </Link>
+          </AnchorLink>
         </li>
         <li>
-          <Link to="/contact">
+          <AnchorLink to="#contact">
             Contact
-          </Link>
+          </AnchorLink>
         </li>
       </ul>
     </div>

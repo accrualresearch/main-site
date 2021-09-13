@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
   careers,
 }) => (
   <>
-    <div className="container about">
+    <div id="about" className="container about">
       <div className="inner">
         <div>
           <h1>{about.heading}</h1>
@@ -35,7 +35,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className="container explore">
+    <div id="products" className="container explore">
       <div className="inner">
         <div className="exploreText">
           <div style={{width:"100%",height:"40%"}}></div>
@@ -65,7 +65,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className="consulting container">
+    <div id="consulting" className="consulting container">
       <div className="inner">
 
         <div className="row">
@@ -127,7 +127,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className="careers container">
+    <div id="careers" className="careers container">
       <div className="inner">
         <h1>{careers.heading}</h1>
         <p>{careers.text}</p>
@@ -135,7 +135,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className="contact container">
+    <div id="contact" className="contact container">
       <div className="inner">
         <ContactForm />
       </div>
