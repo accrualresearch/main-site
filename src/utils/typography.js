@@ -1,21 +1,14 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "2.5rem",
   headerFontFamily: ["Raleway"],
   bodyFontFamily: ["Raleway"],
+  scaleRatio: 3,
   overrideStyles: () => ({
     "img,ul,li": {
       marginBottom: 0
     },
-    "h1": {
-      fontWeight: 900,
-      fontSize: "60px"
-    },
-    "h2": {
-      fontWeight: 900,
-      fontSize: "40px"
-    }
   })
 })
 

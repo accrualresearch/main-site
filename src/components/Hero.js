@@ -20,14 +20,14 @@ const Grid = () => (
     </div>
 
     <div className="hero-column column-2">
-      <div style={{height: "50%", paddingBottom: "5px"}}>
-        <div className="hero-item" style={{height: "100%", alignItems: "flex-end"}}>
+      <div className="inner-1">
+        <div className="hero-item">
           <h2>Consulting</h2>
         </div>
       </div>
 
-      <div style={{height: "50%", paddingTop: "5px"}}>
-        <div className="hero-item" style={{height: "100%", alignItems: "flex-end"}}>
+      <div className="inner-2">
+        <div className="hero-item">
           <h2>Data Driven Analysis</h2>
         </div>
       </div>
