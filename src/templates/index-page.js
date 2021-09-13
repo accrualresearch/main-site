@@ -8,17 +8,6 @@ import Hero from "../components/Hero"
 import "./index-page.css"
 import ContactForm from "../components/ContactForm"
 
-import aboutImage from "../img/aboutImage.png"
-
-const Container = ({ children, bg, text, width }) => (
-  <section className="section-container" style={{
-    backgroundColor: bg,
-    color: text
-  }}>
-    <div className="section-inner">{children}</div>
-  </section>
-)
-
 export const IndexPageTemplate = ({
   about,
   product1,
@@ -29,13 +18,23 @@ export const IndexPageTemplate = ({
   careers,
 }) => (
   <>
-    <Container bg="black" text="white">
-      <div style={{width: "60%"}}>
-        <h1>{about.heading}</h1>
-        <p>{about.text}</p>
+    <div className="about-container">
+      <div className="about-inner">
+        <div className="about-item">
+          <h1>{about.heading}</h1>
+        </div>
+        <div className="about-item">
+          <p>{about.text}</p>
+        </div>
+        <div className="about-spacer">
+
+        </div>
+        <div>
+          <button>Contact</button>
+        </div>
       </div>
-      <img src={aboutImage} />
-    </Container>
+    </div>
+
     <div className="exploreProducts">
       <div className="exploreText">
         <div style={{width:"100%",height:"40%"}}></div>
