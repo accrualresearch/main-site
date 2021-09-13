@@ -16,19 +16,50 @@ export const Container = ({ children, bg, text }) => (
 const Grid = () => (
   <Container text="white">
     <div className="hero-column column-1 hero-item">
-      <h1>Next Level <br /> Blockchain Products</h1>
+      <div className="row top">
+        <h1>Next Level <br /> Blockchain Products</h1>
+      </div>
+      <div className="row middle">
+
+      </div>
+      <div className="row bottom">
+        <div className="column left">
+          <button>Learn More</button>
+        </div>
+        <div className="column middle">
+          <button>Contact</button>
+        </div>
+        <div className="column right">
+        </div>
+      </div>
     </div>
 
     <div className="hero-column column-2">
       <div className="inner-1">
         <div className="hero-item">
-          <h2>Consulting</h2>
+          <div className="row top">
+
+          </div>
+          <div className="row middle">
+            <h2>Consulting</h2>
+          </div>
+          <div className="row bottom">
+            <button>→</button>
+          </div>
         </div>
       </div>
 
       <div className="inner-2">
         <div className="hero-item">
-          <h2>Data Driven Analysis</h2>
+          <div className="row top">
+
+          </div>
+          <div className="row middle">
+            <h2>Data Driven Analysis</h2>
+          </div>
+          <div className="row bottom">
+            <button>→</button>
+          </div>
         </div>
       </div>
     </div>
