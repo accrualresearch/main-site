@@ -18,15 +18,15 @@ export const IndexPageTemplate = ({
   careers,
 }) => (
   <>
-    <div className="about-container">
-      <div className="about-inner">
-        <div className="about-item">
+    <div className="container about">
+      <div className="inner">
+        <div>
           <h1>{about.heading}</h1>
         </div>
-        <div className="about-item">
+        <div>
           <p>{about.text}</p>
         </div>
-        <div className="about-spacer">
+        <div className="spacer">
 
         </div>
         <div>
@@ -35,87 +35,90 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className="exploreProducts">
-      <div className="exploreText">
-        <div style={{width:"100%",height:"40%"}}></div>
-        <h1 style={{margin: 0}}>Explore</h1>
-        <h1>Our Products</h1>
+    <div className="container explore">
+      <div classNae="inner">
+        <div className="exploreText">
+          <div style={{width:"100%",height:"40%"}}></div>
+          <h1 style={{margin: 0}}>Explore</h1>
+          <h1>Our Products</h1>
+        </div>
       </div>
     </div>
-    <div className="product-container pulsebot">
-      <div className="product-inner">
-        <div className="product-item"></div>
-        <div className="product-item">
+
+    <div className="container product pulsebot">
+      <div className="inner">
+        <div className="item"></div>
+        <div className="item">
           <h1>{product1.heading}</h1>
           <p>{product1.text}</p>
         </div>
       </div>
     </div>
 
-    <div className="product-container chainpulse" style={{backgroundColor: "black"}}>
-      <div className="product-inner">
-        <div className="product-item" style={{color: "white"}}>
+    <div className="product container chainpulse" style={{backgroundColor: "black"}}>
+      <div className="inner">
+        <div className="item" style={{color: "white"}}>
           <h1>{product2.heading}</h1>
           <p>{product2.text}</p>
         </div>
-        <div className="product-item"></div>
+        <div className="item"></div>
       </div>
     </div>
 
-    <div className="consulting-container">
-      <div className="consulting-inner">
+    <div className="consulting container">
+      <div className="inner">
 
-        <div className="consulting-row">
+        <div className="row">
           <h1>Consulting with Perspective</h1>
         </div>
-        <div className="consulting-row">
-          <div className="consulting-column" style={{flexBasis: "10%"}}>
+        <div className="row">
+          <div className="column" style={{flexBasis: "10%"}}>
             
           </div>
-          <div className="consulting-column" style={{flexBasis: "90%"}}>
-            <div className="consulting-item">
+          <div className="column" style={{flexBasis: "90%"}}>
+            <div className="item">
               <h2>{consulting.heading1}</h2>
             </div>
-            <div className="consulting-item">
+            <div className="item">
               <p>{consulting.text1}</p>
             </div>
           </div>
         </div>
-        <div className="consulting-row">
-          <div className="consulting-column" style={{flexBasis: "10%"}}>
+        <div className="row">
+          <div className="column" style={{flexBasis: "10%"}}>
 
           </div>
-          <div className="consulting-column" style={{flexBasis: "90%"}}>
-            <div className="consulting-item">
+          <div className="column" style={{flexBasis: "90%"}}>
+            <div className="item">
               <h2>{consulting.heading2}</h2>
             </div>
-            <div className="consulting-item">
+            <div className="item">
               <p>{consulting.text2}</p>
             </div>
           </div>
         </div>
-        <div className="consulting-row">
-          <div className="consulting-column" style={{flexBasis: "10%"}}>
+        <div className="row">
+          <div className="column" style={{flexBasis: "10%"}}>
 
           </div>
-          <div className="consulting-column" style={{flexBasis: "90%"}}>
-            <div className="consulting-item">
+          <div className="column" style={{flexBasis: "90%"}}>
+            <div className="item">
               <h2>{consulting.heading3}</h2>
             </div>
-            <div className="consulting-item">
+            <div className="item">
               <p>{consulting.text3}</p>
             </div>
           </div>
         </div>
-        <div className="consulting-row">
-          <div className="consulting-column" style={{flexBasis: "10%"}}>
+        <div className="row">
+          <div className="column" style={{flexBasis: "10%"}}>
 
           </div>
-          <div className="consulting-column" style={{flexBasis: "90%"}}>
-            <div className="consulting-item">
+          <div className="column" style={{flexBasis: "90%"}}>
+            <div className="item">
               <h2>{consulting.heading4}</h2>
             </div>
-            <div className="consulting-item">
+            <div className="item">
               <p>{consulting.text4}</p>
             </div>
           </div>
@@ -124,16 +127,16 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className="careers-container">
-      <div className="careers-inner">
+    <div className="careers container">
+      <div className="inner">
         <h1>{careers.heading}</h1>
         <p>{careers.text}</p>
         <JobRoll />
       </div>
     </div>
 
-    <div className="contact-container">
-      <div className="contact-inner">
+    <div className="contact container">
+      <div className="inner">
         <ContactForm />
       </div>
     </div>

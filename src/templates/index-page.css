@@ -1,8 +1,34 @@
-.about-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer {
+  height: 40vh;
+}
+
+.item {
+  flex: 1;
+}
+
+.about.container {
   background-repeat: no-repeat;
   background-size: 70%;
   background-image: url("../img/about.png");
@@ -11,93 +37,76 @@
   color: white;
 }
 
-.about-inner {
-  display: flex;
-  flex-direction: column;
+.about .inner {
   width: 30vw;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.about-spacer {
-  height: 40vh;
-}
-
 @media (max-width: 1200px) {
-  .about-container {
+  .about.container {
     background-size: 90%;
     background-position: 50% 75%;
   }
-  .about-inner {
+  .about .inner {
     width: 50vw;
   }
-  .about-spacer {
+  .spacer {
     height: 30vh;
   }
 }
 
 
 @media (max-width: 800px) {
-  .about-container {
+  .about.container {
     background-size: 100%;
   }
-  .about-inner {
+  .about .inner {
     width: 70vw;
   }
-  .about-spacer {
+  .spacer {
     height: 20vh;
   }
 }
 
-.exploreProducts {
+.explore.container {
   background-image: url("../img/explore-products.png");
   background-size: cover;
-  width: 100%;
   height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .exploreText {
   color: white;
 }
 
-.product-container {
-  display: flex;
+.product.container {
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.product-container.pulsebot {
+.pulsebot {
   background-image: url("../img/pulsebot.png");
 }
 
-.product-container.chainpulse {
+.chainpulse {
   background-image: url("../img/chainpulse.png");
 }
 
-.product-inner {
-  display: flex;
+.product .inner {
   flex-direction: row;
   width: 70vw;
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
-.product-item {
-  flex: 1;
+.product .item {
   flex-basis: 50%;
 }
 
 
 @media (max-width: 1200px) {
-  .product-inner {
+  .product .inner {
     margin-top: 100px;
     margin-bottom: 100px;
   }
@@ -105,25 +114,25 @@
 
 
 @media (max-width: 800px) {
-  .product-inner {
+  .product .inner {
     margin-top: 50px;
     margin-bottom: 50px;
   }
 }
 
-.consulting-container {
+.consulting.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-image: url("../img/consulting.png");
+  background-image: url("../img/consulting_rotated.png");
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: 100% -75%;
+  background-position: 100% -150%;
 }
 
 @media (max-width: 1200px) {
-  .consulting-container {
+  .consulting.container {
     background-size: 75%;
     background-position: 100% -50%;
   }
@@ -131,63 +140,35 @@
 
 
 @media (max-width: 800px) {
-  .consulting-container {
+  .consulting.container {
     background-position: 100% 0%;
   }
 }
 
-.consulting-inner {
-  display: flex;
-  flex-direction: column;
+.consulting .inner {
   width: 50vw;
   margin-top: 300px;
   margin-bottom: 100px;
 }
 
-.consulting-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.consulting-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.consulting-item {
-  flex: 1;
-}
-
-.careers-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+.careers.container {
   background-color: black;
   color: white;
 }
 
-.careers-inner {
-  display: flex;
-  flex-direction: column;
+.careers .inner {
   width: 50vw;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+.contact.container {
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url("../img/contact.jpg");
 }
 
-.container-inner {
-  display: flex;
-  flex-direction: column;
+.contact .inner {
   width: 50vw;
   margin-top: 100px;
   margin-bottom: 100px;
