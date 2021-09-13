@@ -18,6 +18,12 @@ footer {
   flex-direction: row;
 }
 
+@media(max-width: 800px) {
+  #footer-links-container {
+    flex-direction: column;
+  }
+}
+
 .footer-links-col {
   display: flex;
   flex-direction: column;
