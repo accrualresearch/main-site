@@ -8,6 +8,9 @@ import Hero from "../components/Hero"
 import "./index-page.css"
 import ContactForm from "../components/ContactForm"
 
+import pulsebot from "../img/pulsebot.png"
+import chainpulse from "../img/chainpulse.png"
+
 export const IndexPageTemplate = ({
   about,
   product1,
@@ -38,7 +41,6 @@ export const IndexPageTemplate = ({
     <div id="products" className="container explore">
       <div className="inner">
         <div className="exploreText">
-          <div style={{width:"100%",height:"40%"}}></div>
           <h1 style={{margin: 0}}>Explore</h1>
           <h1>Our Products</h1>
         </div>
@@ -47,8 +49,10 @@ export const IndexPageTemplate = ({
 
     <div className="container product pulsebot">
       <div className="inner">
-        <div className="item"></div>
-        <div className="item">
+        <div className="item image">
+          <img src={pulsebot} />
+        </div>
+        <div className="item text">
           <h1>{product1.heading}</h1>
           <p>{product1.text}</p>
         </div>
@@ -57,11 +61,13 @@ export const IndexPageTemplate = ({
 
     <div className="product container chainpulse" style={{backgroundColor: "black"}}>
       <div className="inner">
-        <div className="item" style={{color: "white"}}>
+        <div className="item text" style={{color: "white"}}>
           <h1>{product2.heading}</h1>
           <p>{product2.text}</p>
         </div>
-        <div className="item"></div>
+        <div className="item image">
+          <img src={chainpulse} />
+        </div>
       </div>
     </div>
 

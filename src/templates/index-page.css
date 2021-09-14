@@ -72,7 +72,14 @@
 .explore.container {
   background-image: url("../img/explore-products.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 40vh;
+}
+
+@media (max-width: 800px) {
+  .explore.container {
+    height: 20vh;
+  }
 }
 
 .exploreText {
@@ -81,42 +88,49 @@
 
 .product.container {
   flex-direction: row;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.pulsebot {
-  background-image: url("../img/pulsebot.png");
-}
-
-.chainpulse {
-  background-image: url("../img/chainpulse.png");
 }
 
 .product .inner {
   flex-direction: row;
-  width: 70vw;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  width: 100vw;
+}
+
+.item.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pulsebot .item.text {
+  align-items: flex-start;
+}
+
+.chainpulse .item.text {
+  align-items: flex-end;
 }
 
 .product .item {
   flex-basis: 50%;
 }
 
-
-@media (max-width: 1200px) {
-  .product .inner {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
+.item.image img {
+  min-width: 100%;
+  min-height: 100%;
 }
-
 
 @media (max-width: 800px) {
   .product .inner {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pulsebot .item.text {
+    align-items: center;
+  }
+  
+  .chainpulse .item.text {
+    align-items: center;
+    order: 2;
   }
 }
 
