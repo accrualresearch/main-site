@@ -99,6 +99,7 @@ module.exports = {
       options: {
         duration: 2000
       }
-    }
+    },
+    `gatsby-plugin-fontawesome-css`
   ],
 }

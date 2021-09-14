@@ -15,10 +15,8 @@
   align-items: center;
 }
 
-@media (max-width: 800px) {
-  .header-container {
-    width: 80vw;
-  }
+.mobile-header-container {
+  display: none;
 }
 
 ul {
@@ -57,4 +55,19 @@ ul li a:hover {
 ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media (max-width: 800px) {
+  .header {
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  .header-container {
+    display: none;
+  }
+  .mobile-header-container {
+    display: flex;
+    color: white;
+    font-size: 25px;
+  }
 }

@@ -5,9 +5,13 @@ import logo from "../img/accrual_white.svg"
 import "./Header.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <div className="header-container">
+    <nav className="header-container">
       <Link to="/" style={{padding: "5px"}}>
         <img src={logo} width={150} alt={siteTitle} />
       </Link>
@@ -38,6 +42,9 @@ const Header = ({ siteTitle }) => (
           </AnchorLink>
         </li>
       </ul>
+    </nav>
+    <div className="mobile-header-container">
+      <FontAwesomeIcon icon={faBars} />
     </div>
   </header>
 )
