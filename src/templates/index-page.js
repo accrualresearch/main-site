@@ -10,7 +10,7 @@ import Hero from "../components/Hero"
 import "./index-page.css"
 import ContactForm from "../components/ContactForm"
 
-import pulsebot from "../img/pulsebot.png"
+import pulsebot from "../img/pulsebot.jpg"
 import chainpulse from "../img/chainpulse.png"
 
 export const IndexPageTemplate = ({
@@ -81,8 +81,12 @@ export const IndexPageTemplate = ({
         </div>
         <div className="row">
           <div className="icon column">
-            <FontAwesomeIcon icon={faChartArea} />
-          </div>
+            <div className="item">
+              </div>
+              <div className="item">
+              <FontAwesomeIcon icon={faChartArea} />
+              </div>
+            </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
               <h2>{consulting.heading1}</h2>
@@ -94,7 +98,11 @@ export const IndexPageTemplate = ({
         </div>
         <div className="row">
           <div className="icon column">
-            <FontAwesomeIcon icon={faDollarSign} />
+            <div className="item">
+            </div>
+            <div className="item">
+              <FontAwesomeIcon icon={faDollarSign} />
+            </div>
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
@@ -107,8 +115,12 @@ export const IndexPageTemplate = ({
         </div>
         <div className="row">
           <div className="icon column">
-            <FontAwesomeIcon icon={faCoins} />
-          </div>
+            <div className="item">
+              </div>
+              <div className="item">
+                <FontAwesomeIcon icon={faCoins} />
+              </div>
+            </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
               <h2>{consulting.heading3}</h2>
@@ -120,7 +132,11 @@ export const IndexPageTemplate = ({
         </div>
         <div className="row">
           <div className="icon column">
-            <FontAwesomeIcon icon={faCode} />
+            <div className="item">
+            </div>
+            <div className="item">
+              <FontAwesomeIcon icon={faCode} />
+            </div>
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
