@@ -145,6 +145,13 @@
   background-position: 100% -150%;
 }
 
+.consulting .icon.column {
+  flex-basis: 10%;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
 @media (max-width: 1200px) {
   .consulting.container {
     background-size: 75%;
@@ -156,6 +163,9 @@
 @media (max-width: 800px) {
   .consulting.container {
     background-position: 100% 0%;
+  }
+  .consulting .icon.column {
+    flex-basis: 20%;
   }
 }
 

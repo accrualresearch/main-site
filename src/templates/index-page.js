@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChartArea, faDollarSign, faCode, faCoins } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/Layout'
 import JobRoll from '../components/JobRoll'
@@ -78,8 +80,8 @@ export const IndexPageTemplate = ({
           <h1>Consulting with Perspective</h1>
         </div>
         <div className="row">
-          <div className="column" style={{flexBasis: "10%"}}>
-            
+          <div className="icon column">
+            <FontAwesomeIcon icon={faChartArea} />
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
@@ -91,8 +93,8 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <div className="row">
-          <div className="column" style={{flexBasis: "10%"}}>
-
+          <div className="icon column">
+            <FontAwesomeIcon icon={faDollarSign} />
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
@@ -104,8 +106,8 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <div className="row">
-          <div className="column" style={{flexBasis: "10%"}}>
-
+          <div className="icon column">
+            <FontAwesomeIcon icon={faCoins} />
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
@@ -117,8 +119,8 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <div className="row">
-          <div className="column" style={{flexBasis: "10%"}}>
-
+          <div className="icon column">
+            <FontAwesomeIcon icon={faCode} />
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
@@ -129,7 +131,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-
+        <button>Contact</button>
       </div>
     </div>
 
