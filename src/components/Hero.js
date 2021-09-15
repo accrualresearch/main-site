@@ -25,12 +25,12 @@ const Grid = () => (
       </div>
       <div className="row bottom">
         <div className="column left">
-          <Button variant="outline">
+          <Button variant="outline" color="white" link="#products">
             Learn More
           </Button>
         </div>
         <div className="column middle">
-          <Button variant="solid">
+          <Button variant="solid" color="black" link="#contact">
             Contact
           </Button>
         </div>
@@ -49,7 +49,7 @@ const Grid = () => (
             <h2>Consulting</h2>
           </div>
           <div className="row bottom">
-            <Button variant="none">
+            <Button variant="none" color="white" link="#consulting">
               →
             </Button>
           </div>
@@ -65,7 +65,7 @@ const Grid = () => (
             <h2>Data Driven Analysis</h2>
           </div>
           <div className="row bottom">
-            <Button variant="none">
+            <Button variant="none" color="white" link="#">
               →
             </Button>
           </div>

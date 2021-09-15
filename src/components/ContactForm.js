@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+import Button from "../components/Button"
 
 import "./ContactForm.css"
 
@@ -116,9 +117,9 @@ export default class ContactForm extends React.Component {
                 </div>
               </div>
               <div>
-                <button type="submit">
-                  Send
-                </button>
+                <Button variant="outline" color="black">
+                  Submit
+                </Button>
               </div>
             </form>
           </div>

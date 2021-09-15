@@ -12,6 +12,7 @@ import ContactForm from "../components/ContactForm"
 
 import pulsebot from "../img/pulsebot.jpg"
 import chainpulse from "../img/chainpulse.png"
+import Button from "../components/Button"
 
 export const IndexPageTemplate = ({
   about,
@@ -35,7 +36,9 @@ export const IndexPageTemplate = ({
 
         </div>
         <div>
-          <button>Contact</button>
+          <Button variant="outline" color="white" link="#contact">
+            Contact
+          </Button>
         </div>
       </div>
     </div>
@@ -57,6 +60,10 @@ export const IndexPageTemplate = ({
         <div className="item text">
           <h1>{product1.heading}</h1>
           <p>{product1.text}</p>
+
+          <Button variant="outline" color="black">
+            Coming Soon
+          </Button>
         </div>
       </div>
     </div>
@@ -66,6 +73,9 @@ export const IndexPageTemplate = ({
         <div className="item text" style={{color: "white"}}>
           <h1>{product2.heading}</h1>
           <p>{product2.text}</p>
+          <Button variant="outline" color="white">
+            Coming Soon
+          </Button>
         </div>
         <div className="item image">
           <img src={chainpulse} />
@@ -147,7 +157,24 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-        <button>Contact</button>
+
+        <div className="row">
+          <div className="icon column">
+            <div className="item">
+            </div>
+            <div className="item">
+            </div>
+          </div>
+          <div className="column" style={{flexBasis: "90%"}}>
+            <div className="item">
+              <Button variant="outline" color="black" link="#contact">
+                Contact
+              </Button>
+            </div>
+            <div className="item">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
