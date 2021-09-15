@@ -9,9 +9,6 @@ import JobRoll from '../components/JobRoll'
 import Hero from "../components/Hero"
 import "./index-page.css"
 import ContactForm from "../components/ContactForm"
-
-import pulsebot from "../img/pulsebot.jpg"
-import chainpulse from "../img/chainpulse.png"
 import Button from "../components/Button"
 
 export const IndexPageTemplate = ({
@@ -54,8 +51,7 @@ export const IndexPageTemplate = ({
 
     <div className="container product pulsebot">
       <div className="inner">
-        <div className="item image">
-          <img src={pulsebot} />
+        <div className="item image" style={{backgroundColor: "blue"}}>
         </div>
         <div className="item text">
           <h1>{product1.heading}</h1>
@@ -78,7 +74,6 @@ export const IndexPageTemplate = ({
           </Button>
         </div>
         <div className="item image">
-          <img src={chainpulse} />
         </div>
       </div>
     </div>

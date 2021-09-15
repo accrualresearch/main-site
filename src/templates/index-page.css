@@ -88,18 +88,36 @@
 
 .product.container {
   flex-direction: row;
-  padding-bottom: 20px;
+  height: 50vh;
 }
 
 .product .inner {
   flex-direction: row;
   width: 100vw;
+  height: 100%;
+}
+
+.pulsebot .item.image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/pulsebot.jpg");
+  background-position: 50% 50%;
+  background-color: white;
+}
+
+.chainpulse .item.image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/chainpulse.jpg");
+  background-position: 50% 50%;
+  background-color: black;
 }
 
 .item.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
 }
 
 .pulsebot .item.text {
@@ -112,11 +130,6 @@
 
 .product .item {
   flex-basis: 50%;
-}
-
-.item.image img {
-  min-width: 100%;
-  min-height: 100%;
 }
 
 @media (max-width: 800px) {
