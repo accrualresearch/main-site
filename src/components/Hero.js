@@ -68,7 +68,7 @@ const Grid = () => (
 
 const Hero = () => (
   <>
-    <section className="heroVideoSection">
+    <section className="heroVideoSection" style={{backgroundColor: "red"}}>
       <video className="heroVideo" autoPlay muted loop>
         <source src={heroMp4} type="video/mp4" />
         <source src={heroWebm} type="video/webm" />
