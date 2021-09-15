@@ -140,10 +140,10 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-image: url("../img/consulting_rotated.png");
+  background-image: url("../img/consulting.png");
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: 100% -150%;
+  background-position: 100% 0%;
 }
 
 .consulting .icon.column {
@@ -156,15 +156,11 @@
 @media (max-width: 1200px) {
   .consulting.container {
     background-size: 75%;
-    background-position: 100% -50%;
   }
 }
 
 
 @media (max-width: 800px) {
-  .consulting.container {
-    background-position: 100% 0%;
-  }
   .consulting .icon.column {
     flex-basis: 20%;
   }
@@ -172,8 +168,8 @@
 
 .consulting .inner {
   width: 50vw;
-  margin-top: 300px;
-  margin-bottom: 100px;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
 }
 
 .careers.container {
