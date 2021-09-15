@@ -87,9 +87,9 @@ export const IndexPageTemplate = ({
         <div className="row">
           <div className="icon column">
             <div className="item">
+              <FontAwesomeIcon icon={faChartArea} />
               </div>
               <div className="item">
-              <FontAwesomeIcon icon={faChartArea} />
               </div>
             </div>
           <div className="column" style={{flexBasis: "90%"}}>
@@ -104,9 +104,9 @@ export const IndexPageTemplate = ({
         <div className="row">
           <div className="icon column">
             <div className="item">
+              <FontAwesomeIcon icon={faDollarSign} />
             </div>
             <div className="item">
-              <FontAwesomeIcon icon={faDollarSign} />
             </div>
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
@@ -121,9 +121,9 @@ export const IndexPageTemplate = ({
         <div className="row">
           <div className="icon column">
             <div className="item">
+                <FontAwesomeIcon icon={faCoins} />
               </div>
               <div className="item">
-                <FontAwesomeIcon icon={faCoins} />
               </div>
             </div>
           <div className="column" style={{flexBasis: "90%"}}>
@@ -138,9 +138,9 @@ export const IndexPageTemplate = ({
         <div className="row">
           <div className="icon column">
             <div className="item">
+              <FontAwesomeIcon icon={faCode} />
             </div>
             <div className="item">
-              <FontAwesomeIcon icon={faCode} />
             </div>
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
