@@ -2,6 +2,7 @@ import * as React from "react"
 import "./Hero.css"
 import heroMp4 from "../img/Hero_video.mp4"
 import heroWebm from "../img/Hero_video.webm"
+import Button from "../components/Button"
 
 export const Container = ({ children, bg, text }) => (
   <div className="hero-container" style={{
@@ -68,7 +69,7 @@ const Grid = () => (
 
 const Hero = () => (
   <>
-    <section className="heroVideoSection" style={{backgroundColor: "red"}}>
+    <section className="heroVideoSection">
       <video className="heroVideo" autoPlay muted loop>
         <source src={heroMp4} type="video/mp4" />
         <source src={heroWebm} type="video/webm" />
