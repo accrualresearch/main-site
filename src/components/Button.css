@@ -10,20 +10,20 @@
 
 .ar-button.solid {
   background-color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   border: none;
-  width: 150px;
+  width: 175px;
   height: 40px;
 }
 
 .ar-button.outline {
   background: transparent;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   border-width: 1px;
   border-style: solid;
-  width: 150px;
+  width: 175px;
   height: 40px;
 }
 
