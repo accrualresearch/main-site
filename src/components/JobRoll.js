@@ -16,18 +16,18 @@ class JobRoll extends React.Component {
               <article className="job-inner">
                 <header>
                   <h2>
-                    <Link className="job-link" to={post.fields.slug}>
+                    {/* <Link className="job-link" to={post.fields.slug}> */}
                       {post.frontmatter.title}
-                    </Link>
+                    {/* </Link> */}
                   </h2>
                 </header>
                 <p>
                   {post.excerpt}
-                  <br />
+                  {/* <br />
                   <br />
                   <Link className="job-link" to={post.fields.slug}>
                     →
-                  </Link>
+                  </Link> */}
                 </p>
               </article>
             </div>
