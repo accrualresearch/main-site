@@ -25,10 +25,14 @@ const Grid = () => (
       </div>
       <div className="row bottom">
         <div className="column left">
-          <button>Learn More</button>
+          <Button variant="outline">
+            Learn More
+          </Button>
         </div>
         <div className="column middle">
-          <button>Contact</button>
+          <Button variant="solid">
+            Contact
+          </Button>
         </div>
         <div className="column right">
         </div>
@@ -45,7 +49,9 @@ const Grid = () => (
             <h2>Consulting</h2>
           </div>
           <div className="row bottom">
-            <button>→</button>
+            <Button variant="none">
+              →
+            </Button>
           </div>
         </div>
       </div>
@@ -59,7 +65,9 @@ const Grid = () => (
             <h2>Data Driven Analysis</h2>
           </div>
           <div className="row bottom">
-            <button>→</button>
+            <Button variant="none">
+              →
+            </Button>
           </div>
         </div>
       </div>

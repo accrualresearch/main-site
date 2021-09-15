@@ -1,0 +1,52 @@
+.ar-button.solid {
+  background-color: #ffffff;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  width: 120px;
+}
+
+.ar-button.outline {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid white;
+  width: 120px;
+}
+
+.ar-button.solid:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.ar-button.solid:active {
+  border: 1px solid black;
+}
+
+.ar-button.outline:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.ar-button.outline:active {
+  border: 1px solid black;
+}
+
+.ar-button.none {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+.ar-button.none:hover {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.ar-button.none:active {
+  color: black;
+}

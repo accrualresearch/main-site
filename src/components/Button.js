@@ -1,8 +1,8 @@
 import * as React from "react"
 import "./Button.css"
 
-const Button = ({ text }) => (
-  <button>{text}</button>
+const Button = ({ children, variant }) => (
+  <button className={`ar-button ${variant}`}>{children}</button>
 )
 
 export default Button
