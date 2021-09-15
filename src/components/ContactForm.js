@@ -1,6 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 
+import "./ContactForm.css"
+
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -50,6 +52,7 @@ export default class ContactForm extends React.Component {
           <div>
             <h1>Contact</h1>
             <form
+              className="contactForm"
               name="contact"
               method="post"
               action="/contact/thanks/"
@@ -66,11 +69,9 @@ export default class ContactForm extends React.Component {
                 </label>
               </div>
               <div>
-                <label htmlFor={'name'}>
-                  Your name
-                </label>
                 <div>
                   <input
+                    placeholder={'Name*'}
                     type={'text'}
                     name={'name'}
                     onChange={this.handleChange}
@@ -80,11 +81,9 @@ export default class ContactForm extends React.Component {
                 </div>
               </div>
               <div>
-                <label htmlFor={'email'}>
-                  Email
-                </label>
                 <div>
                   <input
+                    placeholder={'Email*'}
                     type={'email'}
                     name={'email'}
                     onChange={this.handleChange}
@@ -94,15 +93,25 @@ export default class ContactForm extends React.Component {
                 </div>
               </div>
               <div>
-                <label htmlFor={'message'}>
-                  Message
-                </label>
+                <div>
+                  <input
+                    placeholder={'Subject*'}
+                    name={'subject'}
+                    onChange={this.handleChange}
+                    id={'subject'}
+                    required={true}
+                  />
+                </div>
+              </div>
+              <div>
                 <div>
                   <textarea
+                    placeholder={'Message*'}
                     name={'message'}
                     onChange={this.handleChange}
                     id={'message'}
                     required={true}
+                    rows="5"
                   />
                 </div>
               </div>
