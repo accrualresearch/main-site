@@ -18,13 +18,17 @@ export const onRenderBody = (
       dangerouslySetInnerHTML={{
         __html: `
         CookieThough.init(${JSON.stringify(config)});
-        CookieThough.onPreferencesChanged((preferences)=> {
+        CookieThough.onPreferencesChanged(function(preferences) {
           if(!window.dataLayer) {
             return;
           }
+          const prefsObj = {};
+          preferences.cookieOptions.forEach(function(option) {
+            prefsObj[option.id] = option.isEnabled;
+          });
           window.dataLayer.push({
             "event": "cookie-preference-change",
-            "preferences": preferences
+            "preferences": prefsObj
           });
         })`,
       }}
