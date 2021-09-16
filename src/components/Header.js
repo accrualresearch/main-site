@@ -12,27 +12,27 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const NavLinks = ({ handleOpen }) => (
   <ul>
     <li to="#about">
-      <AnchorLink to="#about" onAnchorLinkClick={handleOpen}>
+      <AnchorLink to="/#about" onAnchorLinkClick={handleOpen}>
         About
       </AnchorLink>
     </li>
     <li>
-      <AnchorLink to="#products">
+      <AnchorLink to="/#products" onAnchorLinkClick={handleOpen}>
         Products
       </AnchorLink>
     </li>
     <li>
-      <AnchorLink to="#consulting">
+      <AnchorLink to="/#consulting" onAnchorLinkClick={handleOpen}>
         Consulting
       </AnchorLink>
     </li>
     <li>
-      <AnchorLink to="#careers">
+      <AnchorLink to="/#careers" onAnchorLinkClick={handleOpen}>
         Careers
       </AnchorLink>
     </li>
     <li>
-      <AnchorLink to="#contact">
+      <AnchorLink to="/#contact" onAnchorLinkClick={handleOpen}>
         Contact
       </AnchorLink>
     </li>

@@ -17,19 +17,19 @@ const Footer = ({ siteTitle }) => (
           </Link>
         </div>
         <div className="footer-links-col">
-          <AnchorLink className="footer-link-header" to="#about">About Us →</AnchorLink>
+          <AnchorLink className="footer-link-header" to="/#about">About Us →</AnchorLink>
         </div>
         <div className="footer-links-col">
-          <AnchorLink className="footer-link-header" to="#products">Product →</AnchorLink>
+          <AnchorLink className="footer-link-header" to="/#products">Product →</AnchorLink>
         </div>
         <div className="footer-links-col">
-          <AnchorLink className="footer-link-header" to="#consulting">Consulting →</AnchorLink>
+          <AnchorLink className="footer-link-header" to="/#consulting">Consulting →</AnchorLink>
         </div>
         <div className="footer-links-col">
-          <AnchorLink className="footer-link-header" to="#careers">Careers →</AnchorLink>
+          <AnchorLink className="footer-link-header" to="/#careers">Careers →</AnchorLink>
         </div>
         <div className="footer-links-col">
-          <AnchorLink className="footer-link-header" to="#contact">Contact →</AnchorLink>
+          <AnchorLink className="footer-link-header" to="/#contact">Contact →</AnchorLink>
         </div>
       </div>
       <p>© 2021, Accrual Research</p>
