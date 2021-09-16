@@ -105,7 +105,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-5V5LXLW",
-        includeInDevelopment: true,
+        includeInDevelopment: false,
         defaultDataLayer: {},
         routeChangeEventName: "virtualPageView",
         enableWebVitalsTracking: true,
