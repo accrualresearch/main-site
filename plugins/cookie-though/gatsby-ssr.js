@@ -16,7 +16,17 @@ export const onRenderBody = (
   setPostBodyComponents([
     <script
       dangerouslySetInnerHTML={{
-        __html: `CookieThough.init(${JSON.stringify(config)})`,
+        __html: `
+        CookieThough.init(${JSON.stringify(config)});
+        CookieThough.onPreferencesChanged((preferences)=> {
+          if(!window.dataLayer) {
+            return;
+          }
+          window.dataLayer.push({
+            "event": "cookie-preference-change",
+            "preferences": preferences
+          });
+        })`,
       }}
     />,
   ]);
