@@ -9,7 +9,7 @@ function encode(data) {
     .join('&')
 }
 
-export const ContactThanks = () => (
+const ContactThanks = () => (
   <section>
     <div>
       <div>
