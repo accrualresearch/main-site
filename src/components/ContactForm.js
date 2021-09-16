@@ -1,5 +1,4 @@
 import React from 'react'
-import { navigate } from 'gatsby-link'
 import Button from "../components/Button"
 
 import "./ContactForm.css"
@@ -14,8 +13,8 @@ export const ContactThanks = () => (
   <section>
     <div>
       <div>
-        <h1>Thank you!</h1>
-        <p>This is a custom thank you page for form submissions</p>
+        <h1>Message Received</h1>
+        <p>Thank you for your enquiry, we'll be in touch soon!</p>
       </div>
     </div>
   </section>
@@ -24,7 +23,10 @@ export const ContactThanks = () => (
 export default class ContactForm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {
+      isValidated: false,
+      isSubmitted: false,
+    }
   }
 
   handleChange = (e) => {
@@ -42,89 +44,93 @@ export default class ContactForm extends React.Component {
         ...this.state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => this.setState({isSubmitted: true}))
       .catch((error) => alert(error))
   }
 
   render() {
     return (
-      <section>
-        <div>
+      <>
+      {this.state.isSubmitted
+        ? <ContactThanks />
+        : <section>
           <div>
-            <h1>Contact</h1>
-            <form
-              className="contactForm"
-              name="contact"
-              method="post"
-              action="/contact/thanks/"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={this.handleSubmit}
-            >
-              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-              <input type="hidden" name="form-name" value="contact" />
-              <div hidden>
-                <label>
-                  Don’t fill this out:{' '}
-                  <input name="bot-field" onChange={this.handleChange} />
-                </label>
-              </div>
-              <div>
-                <div>
-                  <input
-                    placeholder={'Name*'}
-                    type={'text'}
-                    name={'name'}
-                    onChange={this.handleChange}
-                    id={'name'}
-                    required={true}
-                  />
+            <div>
+              <h1>Contact</h1>
+              <form
+                className="contactForm"
+                name="contact"
+                method="post"
+                action="/contact/thanks/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}
+              >
+                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{' '}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
                 </div>
-              </div>
-              <div>
                 <div>
-                  <input
-                    placeholder={'Email*'}
-                    type={'email'}
-                    name={'email'}
-                    onChange={this.handleChange}
-                    id={'email'}
-                    required={true}
-                  />
+                  <div>
+                    <input
+                      placeholder={'Name*'}
+                      type={'text'}
+                      name={'name'}
+                      onChange={this.handleChange}
+                      id={'name'}
+                      required={true}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
                 <div>
-                  <input
-                    placeholder={'Subject*'}
-                    name={'subject'}
-                    onChange={this.handleChange}
-                    id={'subject'}
-                    required={true}
-                  />
+                  <div>
+                    <input
+                      placeholder={'Email*'}
+                      type={'email'}
+                      name={'email'}
+                      onChange={this.handleChange}
+                      id={'email'}
+                      required={true}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
                 <div>
-                  <textarea
-                    placeholder={'Message*'}
-                    name={'message'}
-                    onChange={this.handleChange}
-                    id={'message'}
-                    required={true}
-                    rows="5"
-                  />
+                  <div>
+                    <input
+                      placeholder={'Subject*'}
+                      name={'subject'}
+                      onChange={this.handleChange}
+                      id={'subject'}
+                      required={true}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <Button variant="outline" color="black">
-                  Submit
-                </Button>
-              </div>
-            </form>
+                <div>
+                  <div>
+                    <textarea
+                      placeholder={'Message*'}
+                      name={'message'}
+                      onChange={this.handleChange}
+                      id={'message'}
+                      required={true}
+                      rows="5"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <Button variant="outline" color="black">
+                    Submit
+                  </Button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>}
+      </>
     )
   }
 }
