@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartArea, faDollarSign, faCode, faCoins } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
 
         </div>
         <div>
-          <Button variant="outline" color="white" link="#contact">
+          <Button variant="outline" color="white" link="/#contact">
             Contact
           </Button>
         </div>
@@ -162,7 +162,7 @@ export const IndexPageTemplate = ({
           </div>
           <div className="column" style={{flexBasis: "90%"}}>
             <div className="item">
-              <Button variant="outline" color="black" link="#contact">
+              <Button variant="outline" color="black" link="/#contact">
                 Contact
               </Button>
             </div>
