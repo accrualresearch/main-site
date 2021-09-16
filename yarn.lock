@@ -5964,6 +5964,14 @@
   "resolved" "https://registry.npmjs.org/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz"
   "version" "1.0.1"
 
+"gatsby-plugin-google-tagmanager@^3.13.0":
+  "integrity" "sha512-TItPS6Mv+1XN0yyGN112Fy0Tq0YGaNYW20B9nu7j44nbmpEGeHHTzGtq4En/98lhVa3oW8lRaLHH0n4xWAg+bg=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-3.13.0.tgz"
+  "version" "3.13.0"
+  dependencies:
+    "@babel/runtime" "^7.14.8"
+    "web-vitals" "^1.1.2"
+
 "gatsby-plugin-image@^1.13.0":
   "integrity" "sha512-ZJcModngwC+2r/mQRz03kWpEpeA4OfgJeyCKC3wBjx3dr8n5fpYRmhnX21U6Wh9QyjdVh0sHykmYEgs2vrPa1A=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-1.13.0.tgz"
@@ -14269,6 +14277,11 @@
   "integrity" "sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw=="
   "resolved" "https://registry.npmjs.org/web-namespaces/-/web-namespaces-1.1.4.tgz"
   "version" "1.1.4"
+
+"web-vitals@^1.1.2":
+  "integrity" "sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig=="
+  "resolved" "https://registry.npmjs.org/web-vitals/-/web-vitals-1.1.2.tgz"
+  "version" "1.1.2"
 
 "webpack-assets-manifest@^5.0.6":
   "integrity" "sha512-CW94ylPHurZTmxnYajSFA8763Cv/QFIKNgBwqBLaIOnBjH1EbDUAf8Eq1/i+o8qaKyKXJ3aX7r4/jtpXD88ldg=="

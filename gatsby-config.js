@@ -100,6 +100,16 @@ module.exports = {
         duration: 2000
       }
     },
-    `gatsby-plugin-fontawesome-css`
+    `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5V5LXLW",
+        includeInDevelopment: true,
+        defaultDataLayer: {},
+        routeChangeEventName: "virtualPageView",
+        enableWebVitalsTracking: true,
+      },
+    },
   ],
 }
