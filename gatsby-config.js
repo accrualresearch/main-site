@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Accrual Research`,
     description: `Accrual Research is helping blockchain disrupt finance.`,
-    author: `@jbarratt77`,
+    author: `Accrual Research`,
     siteUrl: `https://accrual-research.netlify.app`,
   },
   plugins: [
@@ -107,7 +107,7 @@ module.exports = {
         id: "GTM-5V5LXLW",
         includeInDevelopment: false,
         defaultDataLayer: {},
-        routeChangeEventName: "navigation",
+        routeChangeEventName: "virtualPageView",
       },
     },
     {

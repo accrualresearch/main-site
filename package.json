@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Accrual Research",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Accrual Research is helping blockchain disrupt finance.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jbarrat77",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -40,7 +40,7 @@
     "prettier": "2.3.2"
   },
   "keywords": [
-    "gatsby"
+    "accrual research"
   ],
   "license": "0BSD",
   "scripts": {
@@ -54,9 +54,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jbarratt77/accrual-research"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/gatsbyjs/accrual-research/issues"
   }
 }
