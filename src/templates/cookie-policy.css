@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+@media (max-width: 800px) {
+  .inner {
+    width: 80vw;
+  }
+}
