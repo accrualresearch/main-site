@@ -40,7 +40,7 @@ export const CookiePolicyPageTemplate = ({
         <div>
           <ol>
             <li>Essential: {essential.text}</li>
-            <li>FunctionaL: {functional.text}</li>
+            <li>Functional: {functional.text}</li>
             <li>Analytics: {analytics.text}</li>
           </ol>
         </div>
