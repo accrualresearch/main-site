@@ -24,6 +24,7 @@ export const JobPostTemplate = ({
             <h1>
               {title}
             </h1>
+            <p>{description}</p>
             <PostContent content={content} />
           </div>
         </div>
