@@ -134,15 +134,8 @@ module.exports = {
               label: "Statistics",
               category: "statistics",
               description:
-                "We need to save some technical cookies, for the website to function properly.",
-            },
-            {
-              id: "social",
-              label: "Social Media Cookies",
-              category: "social",
-              description:
-                "We need to save some social cookies, for the website to function properly.",
-            },
+                "We need to save some analytics cookies in order to improve the content of our website and detect problems.",
+            }
           ],
           permissionLabels: {
             accept: "Accept",
@@ -151,13 +144,13 @@ module.exports = {
           },
           cookiePreferenceKey: "cookie-preferences",
           header: {
-            title: "cookie though?",
+            title: "Cookie Preferences",
             subTitle: "You're probably fed up with these banners...",
             description:
               "Everybody wants to show his best side - and so do we. That’s why we use cookies to guarantee you a better experience.",
           },
           cookiePolicy: {
-            url: "https://inthepocket.com/cookie-policy",
+            url: "/cookie-policy",
             label: "Read the full cookie declaration",
           },
         },
