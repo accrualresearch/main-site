@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartArea, faDollarSign, faCode, faCoins } from '@fortawesome/free-solid-svg-icons'
-
+import SEO from "../components/SEO"
 import Layout from '../components/Layout'
 import JobRoll from '../components/JobRoll'
 import Hero from "../components/Hero"
@@ -203,7 +203,8 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout headerPosition="absolute" bg="transparent">
+      <SEO title="Home"/>
       <Hero />
       <IndexPageTemplate
         about={frontmatter.about}

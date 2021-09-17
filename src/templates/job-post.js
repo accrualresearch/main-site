@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import SEO from "../components/SEO"
 
 export const JobPostTemplate = ({
   content,
@@ -15,15 +16,14 @@ export const JobPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section>
+    <section className="container">
       {helmet || ''}
-      <div>
+      <div className="inner">
         <div>
           <div>
             <h1>
               {title}
             </h1>
-            <p>{description}</p>
             <PostContent content={content} />
           </div>
         </div>
@@ -44,7 +44,8 @@ const JobPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout headerPosition="sticky" bg="white">
+      <SEO title={`${post.frontmatter.title}`}/>
       <JobPostTemplate
         content={post.html}
         contentComponent={HTMLContent}

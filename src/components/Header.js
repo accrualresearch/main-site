@@ -1,7 +1,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import logo from "../img/accrual_white.svg"
+import logoWhite from "../img/accrual_white.svg"
+import logo from "../img/accrual.svg"
 import "./Header.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
@@ -9,8 +10,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-const NavLinks = ({ handleOpen }) => (
-  <ul>
+const NavLinks = ({ handleOpen, bg }) => (
+  <ul className={`bg-${bg}`}>
     <li to="#about">
       <AnchorLink to="/#about" onAnchorLinkClick={handleOpen}>
         About
@@ -39,22 +40,24 @@ const NavLinks = ({ handleOpen }) => (
   </ul>
 )
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, headerPosition, bg }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(!open);
   }
   return (
-    <div className="main-container">
+    <div className="main-container" style={{
+      position: headerPosition
+    }}>
       <header className="header container">
         <nav className="inner">
           <div className="site-logo">
             <Link to="/">
-              <img src={logo} width={150} alt={siteTitle} />
+              <img src={bg === "white" ? logo : logoWhite} width={150} alt={siteTitle} />
             </Link>
           </div>
           <div className="nav-links">
-            <NavLinks />
+            <NavLinks bg={bg}/>
           </div>
           <div className="burger-icon" onClick={handleOpen}>
             <FontAwesomeIcon icon={faBars} />

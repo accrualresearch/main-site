@@ -40,3 +40,13 @@ collections:
           - {label: Product4, name: product4, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
           - {label: Consulting, name: consulting, widget: object, fields: [{label: Heading1, name: heading1, widget: string}, {label: Text1, name: text1, widget: text},{label: Heading2, name: heading2, widget: string}, {label: Text2, name: text2, widget: text},{label: Heading3, name: heading3, widget: string}, {label: Text3, name: text3, widget: text},{label: Heading4, name: heading4, widget: string}, {label: Text4, name: text4, widget: text}]}
           - {label: Careers, name: careers, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+      - file: "src/pages/cookie-policy.md"
+        label: "Cookie Policy"
+        name: "cookie-policy"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cookie-policy"}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Why, name: why, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: Essential, name: essential, widget: object, fields: [{label: Text, name: text, widget: text}]}
+          - {label: Functional, name: functional, widget: object, fields: [{label: Text, name: text, widget: text}]}
+          - {label: Analytics, name: analytics, widget: object, fields: [{label: Text, name: text, widget: text}]}

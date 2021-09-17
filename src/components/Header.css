@@ -1,5 +1,4 @@
 .main-container {
-  position: absolute;
   width: 100%;
   justify-content: center;
   padding-top: 10px;
@@ -40,9 +39,16 @@ ul li a {
   position: relative;
   display: block;
   text-decoration: none;
-  color: #ffffff;
   padding: 5px;
   transition: 0.5s;
+}
+
+ul.bg-white li a {
+  color: black;
+}
+
+ul.bg-transparent li a {
+  color: white;
 }
 
 @media (min-width: 801px) {
@@ -70,6 +76,9 @@ ul li a {
 }
 
 @media (max-width: 800px) {
+  ul li a {
+    color: white;
+  }
   .header.container {
     padding: 20px 20px 0px 20px;
   }
