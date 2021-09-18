@@ -2,28 +2,91 @@ backend:
   name: git-gateway
   branch: main
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "social-icons"
-    label: "Social Icons"
-    folder: "src/components/social-icons"
-    fields:
-      - {label: "Template Key", name:  "templateKey", widget: "hidden", default: "social-icons"}
-      - {label: Title, name: title, widget: string}
-      - {label: Twitter, name: twitter, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
-      - {label: Telegram, name: telegram, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
-      - {label: LinkedIn, name: linkedin, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
-      - {label: Facebook, name: facebook, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
-      - {label: YouTube, name: youtube, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
-      - {label: Twitch, name: twitch, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
+  - name: "components"
+    label: "Components"
+    extension: "json"
+    format: "json"
+    files:
+      - file: "src/data/components/social-icons.json"
+        label: "Social Icons"
+        name: "social-icons"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "social-icons",
+            }
+          - {
+              label: Twitter,
+              name: twitter,
+              widget: object,
+              fields:
+                [
+                  { label: Active, name: active, widget: boolean },
+                  { label: Link, name: link, widget: text },
+                ],
+            }
+          - {
+              label: Telegram,
+              name: telegram,
+              widget: object,
+              fields:
+                [
+                  { label: Active, name: active, widget: boolean },
+                  { label: Link, name: link, widget: text },
+                ],
+            }
+          - {
+              label: LinkedIn,
+              name: linkedin,
+              widget: object,
+              fields:
+                [
+                  { label: Active, name: active, widget: boolean },
+                  { label: Link, name: link, widget: text },
+                ],
+            }
+          - {
+              label: Facebook,
+              name: facebook,
+              widget: object,
+              fields:
+                [
+                  { label: Active, name: active, widget: boolean },
+                  { label: Link, name: link, widget: text },
+                ],
+            }
+          - {
+              label: YouTube,
+              name: youtube,
+              widget: object,
+              fields:
+                [
+                  { label: Active, name: active, widget: boolean },
+                  { label: Link, name: link, widget: text },
+                ],
+            }
+          - {
+              label: Twitch,
+              name: twitch,
+              widget: object,
+              fields:
+                [
+                  { label: Active, name: active, widget: boolean },
+                  { label: Link, name: link, widget: text },
+                ],
+            }
 
   - name: "careers"
     label: "Careers"
@@ -31,12 +94,17 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "job-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Posted Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "job-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Posted Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
     label: "Pages"
@@ -45,21 +113,133 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: About Us, name: about, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Product1, name: product1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Product2, name: product2, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Product3, name: product3, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Product4, name: product4, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Consulting, name: consulting, widget: object, fields: [{label: Heading1, name: heading1, widget: string}, {label: Text1, name: text1, widget: text},{label: Heading2, name: heading2, widget: string}, {label: Text2, name: text2, widget: text},{label: Heading3, name: heading3, widget: string}, {label: Text3, name: text3, widget: text},{label: Heading4, name: heading4, widget: string}, {label: Text4, name: text4, widget: text}]}
-          - {label: Careers, name: careers, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - {
+              label: About Us,
+              name: about,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Product1,
+              name: product1,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Product2,
+              name: product2,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Product3,
+              name: product3,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Product4,
+              name: product4,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Consulting,
+              name: consulting,
+              widget: object,
+              fields:
+                [
+                  { label: Heading1, name: heading1, widget: string },
+                  { label: Text1, name: text1, widget: text },
+                  { label: Heading2, name: heading2, widget: string },
+                  { label: Text2, name: text2, widget: text },
+                  { label: Heading3, name: heading3, widget: string },
+                  { label: Text3, name: text3, widget: text },
+                  { label: Heading4, name: heading4, widget: string },
+                  { label: Text4, name: text4, widget: text },
+                ],
+            }
+          - {
+              label: Careers,
+              name: careers,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
       - file: "src/pages/cookie-policy.md"
         label: "Cookie Policy"
         name: "cookie-policy"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cookie-policy"}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Why, name: why, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: Essential, name: essential, widget: object, fields: [{label: Text, name: text, widget: text}]}
-          - {label: Functional, name: functional, widget: object, fields: [{label: Text, name: text, widget: text}]}
-          - {label: Analytics, name: analytics, widget: object, fields: [{label: Text, name: text, widget: text}]}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "cookie-policy",
+            }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Why,
+              name: why,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Essential,
+              name: essential,
+              widget: object,
+              fields: [{ label: Text, name: text, widget: text }],
+            }
+          - {
+              label: Functional,
+              name: functional,
+              widget: object,
+              fields: [{ label: Text, name: text, widget: text }],
+            }
+          - {
+              label: Analytics,
+              name: analytics,
+              widget: object,
+              fields: [{ label: Text, name: text, widget: text }],
+            }
