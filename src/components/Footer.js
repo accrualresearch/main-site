@@ -1,13 +1,46 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import logo from "../img/accrual.svg"
 import "./Footer.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter, faTelegram, faLinkedin, faFacebook, faYoutube, faTwitch } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = ({ siteTitle }) => {
+  const { componentsJson: data } = useStaticQuery(graphql`
+    query FooterQuery {
+      componentsJson {
+        twitter {
+          active
+          link
+        }
+        telegram {
+          active
+          link
+        }
+        linkedin {
+          active
+          link
+        }
+        facebook {
+          active
+          link
+        }
+        youtube {
+          active
+          link
+        }
+        twitch {
+          active
+          link
+        }
+      }
+    }
+  `)
+
+  console.log(data)
+
   function showCookiePrefs() {
     if(!window.CookieThough) {
       return;
@@ -38,12 +71,36 @@ const Footer = ({ siteTitle }) => {
             <a className="footer-link-header" style={{cursor: "pointer"}} onClick={showCookiePrefs}>Cookie Preferences →</a>
           </div>
           <div className="footer-links-col">
-            <Link className="footer-link-header" to="https://twitter.com/MrBenLilly">
-              <FontAwesomeIcon icon={faTwitter} /> Twitter
-            </Link>
-            <Link className="footer-link-header" to="https://twitter.com/MrBenLilly">
-              <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-            </Link>
+            {data.twitter.active ?
+              <Link className="footer-link-header" to={data.twitter.link}>
+                <FontAwesomeIcon icon={faTwitter} /> Twitter
+              </Link>
+            : null}
+            {data.telegram.active ?
+              <Link className="footer-link-header" to={data.telegram.link}>
+                <FontAwesomeIcon icon={faTelegram} /> Telegram
+              </Link>
+            : null}
+            {data.linkedin.active ?
+              <Link className="footer-link-header" to={data.linkedin.link}>
+                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+              </Link>
+            : null}
+            {data.facebook.active ?
+              <Link className="footer-link-header" to={data.facebook.link}>
+                <FontAwesomeIcon icon={faFacebook} /> Facebook
+              </Link>
+            : null}
+            {data.youtube.active ?
+              <Link className="footer-link-header" to={data.youtube.link}>
+                <FontAwesomeIcon icon={faYoutube} /> YouTube
+              </Link>
+            : null}
+            {data.twitch.active ?
+              <Link className="footer-link-header" to={data.twitch.link}>
+                <FontAwesomeIcon icon={faTwitch} /> Twitch
+              </Link>
+            : null}
           </div>
         </div>
         <p>© 2021, Accrual Research</p>
@@ -52,12 +109,6 @@ const Footer = ({ siteTitle }) => {
   )
 }
 
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Footer.defaultProps = {
-  siteTitle: ``,
-}
-
 export default Footer
+
+
