@@ -13,8 +13,8 @@ export const CookiePolicyPageTemplate = ({
   analytics
 }) => (
   <>
-    <div className="container">
-      <div className="inner">
+    <div className="policy-container">
+      <div className="policy-inner">
         <div>
           <h1>{intro.heading}</h1>
         </div>
@@ -24,8 +24,8 @@ export const CookiePolicyPageTemplate = ({
       </div>
     </div>
 
-    <div className="container">
-      <div className="inner">
+    <div className="policy-container">
+      <div className="policy-inner">
         <div>
           <h1>{why.heading}</h1>
         </div>
@@ -35,8 +35,8 @@ export const CookiePolicyPageTemplate = ({
       </div>
     </div>
 
-    <div className="container">
-      <div className="inner">
+    <div className="policy-container">
+      <div className="policy-inner">
         <div>
           <ol>
             <li>Essential: {essential.text}</li>

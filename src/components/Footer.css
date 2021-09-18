@@ -20,6 +20,9 @@ footer {
 }
 
 @media(max-width: 800px) {
+  .footer-container {
+    width: 80vw;
+  }
   #footer-links-container {
     flex-direction: column;
   }

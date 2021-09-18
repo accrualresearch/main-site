@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
       <div className="inner">
         <div className="exploreText">
           <h1 style={{margin: 0}}>Explore</h1>
-          <h1>Our Products</h1>
+          <h1 className="bold-text" style={{marginBottom: 0}}>Our Products</h1>
         </div>
       </div>
     </div>

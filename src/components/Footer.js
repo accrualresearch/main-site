@@ -39,8 +39,6 @@ const Footer = ({ siteTitle }) => {
     }
   `)
 
-  console.log(data)
-
   function showCookiePrefs() {
     if(!window.CookieThough) {
       return;

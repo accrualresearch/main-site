@@ -1,18 +1,18 @@
-.container {
+.policy-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
 }
 
-.inner {
+.policy-inner {
   display: flex;
   flex-direction: column;
   width: 70vw;
 }
 
 @media (max-width: 800px) {
-  .inner {
+  .policy-inner {
     width: 80vw;
   }
 }

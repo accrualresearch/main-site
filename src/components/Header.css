@@ -1,7 +1,7 @@
 .main-container {
   width: 100%;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .header.container {
@@ -76,6 +76,10 @@ ul.bg-transparent li a {
 }
 
 @media (max-width: 800px) {
+  .main-container {
+    padding-top: 10px;
+  }
+
   ul li a {
     color: white;
   }

@@ -18,7 +18,7 @@ const Grid = () => (
   <Container text="white">
     <div className="hero-column column-1 hero-item">
       <div className="row top">
-        <h1>Next Level <br /> Blockchain Products</h1>
+        <h1 className="bold-text">Next Level <br /> Blockchain Products</h1>
       </div>
       <div className="row middle">
 
@@ -46,7 +46,7 @@ const Grid = () => (
 
           </div>
           <div className="row middle">
-            <h2>Consulting</h2>
+            <h2 className="bold-text">Consulting</h2>
           </div>
           <div className="row bottom">
             <Button variant="none" color="white" link="/#consulting">
@@ -62,7 +62,7 @@ const Grid = () => (
 
           </div>
           <div className="row middle">
-            <h2>Data Driven Analysis</h2>
+            <h2 className="bold-text">Data Driven Analysis</h2>
           </div>
           <div className="row bottom">
             <Button variant="none" color="white" link="/#">

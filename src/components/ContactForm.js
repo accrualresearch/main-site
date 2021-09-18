@@ -56,7 +56,7 @@ export default class ContactForm extends React.Component {
         : <section>
           <div>
             <div>
-              <h1>Contact</h1>
+              <h1 className="bold-text">Contact</h1>
               <form
                 className="contactForm"
                 name="contact"

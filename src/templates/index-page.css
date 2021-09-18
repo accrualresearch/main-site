@@ -5,6 +5,11 @@
   width: 100vw;
 }
 
+.bold-text {
+  text-shadow: 0px 1px, 1px 1px, 1px 0px;
+  letter-spacing: 2px;
+}
+
 .inner {
   display: flex;
   flex-direction: column;
