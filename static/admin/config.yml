@@ -17,9 +17,10 @@ collections:
     folder: "src/components/social-icons"
     fields:
       - {label: "Template Key", name:  "templateKey", widget: "hidden", default: "social-icons"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Twitter Active", name: "twitter-active", widget: "boolean"}
       - {label: "Twitter Link", name: "twitter-link", widget: "text"}
-      - {label: "Telegram Active", name: "telegrame-active", widget: "boolean"}
+      - {label: "Telegram Active", name: "telegram-active", widget: "boolean"}
       - {label: "Telegram Link", name: "telegram-link", widget: "text"}
       - {label: "LinkedIn Active", name: "linkedin-active", widget: "boolean"}
       - {label: "LinkedIn Link", name: "linkedin-link", widget: "text"}

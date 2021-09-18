@@ -1,5 +1,6 @@
 ---
 templateKey: social-icons
+title: Social Icons
 twitter-active: true
 twitter-link: https://twitter.com/MrBenLilly
 telegram-active: true
