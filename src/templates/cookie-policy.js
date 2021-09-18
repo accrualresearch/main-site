@@ -62,7 +62,7 @@ const CookiePolicyPage = ({ data }) => {
 
   return (
     <Layout headerPosition="sticky" bg="white">
-      <SEO title="Cookie Policy"/>
+      <SEO title="Cookie Policy | Accrual Research"/>
       <CookiePolicyPageTemplate
         intro={frontmatter.intro}
         why={frontmatter.why}
