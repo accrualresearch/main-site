@@ -17,19 +17,13 @@ collections:
     folder: "src/components/social-icons"
     fields:
       - {label: "Template Key", name:  "templateKey", widget: "hidden", default: "social-icons"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Twitter Active", name: "twitter-active", widget: "boolean"}
-      - {label: "Twitter Link", name: "twitter-link", widget: "text"}
-      - {label: "Telegram Active", name: "telegram-active", widget: "boolean"}
-      - {label: "Telegram Link", name: "telegram-link", widget: "text"}
-      - {label: "LinkedIn Active", name: "linkedin-active", widget: "boolean"}
-      - {label: "LinkedIn Link", name: "linkedin-link", widget: "text"}
-      - {label: "Facebook Active", name: "facebook-active", widget: "boolean"}
-      - {label: "Facebook Link", name: "facebook-link", widget: "text"}
-      - {label: "YouTube Active", name: "youtube-active", widget: "boolean"}
-      - {label: "YouTube Link", name: "youtube-link", widget: "text"}
-      - {label: "Twitch Active", name: "twitch-active", widget: "boolean"}
-      - {label: "Twitch Link", name: "twitch-link", widget: "text"}
+      - {label: Title, name: title, widget: string}
+      - {label: Twitter, name: twitter, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
+      - {label: Telegram, name: telegram, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
+      - {label: LinkedIn, name: linkedin, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
+      - {label: Facebook, name: facebook, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
+      - {label: YouTube, name: youtube, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
+      - {label: Twitch, name: twitch, widget: object, fields: [{label: Active, name: active, widget: boolean},{label: Link, name: link, widget: text}]}
 
   - name: "careers"
     label: "Careers"
