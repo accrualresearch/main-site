@@ -14,15 +14,15 @@
     "link": "https://twitter.com/MrBenLilly"
   },
   "facebook": {
-    "active": true,
+    "active": false,
     "link": "https://twitter.com/MrBenLilly"
   },
   "youtube": {
-    "active": true,
+    "active": false,
     "link": "https://twitter.com/MrBenLilly"
   },
   "twitch": {
-    "active": true,
+    "active": false,
     "link": "https://twitter.com/MrBenLilly"
   }
 }
