@@ -11,6 +11,7 @@ function Seo({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
@@ -46,7 +47,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: "/preview.png",
+          content: `${site.siteMetadata.siteUrl}preview.png`,
         },
         {
           name: `twitter:card`,
