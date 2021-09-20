@@ -2,7 +2,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import Accrual from "../img/accrual.svg"
 
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -47,11 +46,11 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: Accrual,
+          content: "../img/preview.png",
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:title`,
