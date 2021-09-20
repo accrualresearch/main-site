@@ -62,7 +62,7 @@ const CookiePolicyPage = ({ data }) => {
 
   return (
     <Layout headerPosition="sticky" bg="white">
-      <SEO title="Cookie Policy | Accrual Research"/>
+      <SEO title="Cookie Policy | Accrual Research | Blockchain Consulting"/>
       <CookiePolicyPageTemplate
         intro={frontmatter.intro}
         why={frontmatter.why}

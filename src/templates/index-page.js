@@ -204,7 +204,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout headerPosition="absolute" bg="transparent">
-      <SEO title="Home | Accrual Research"/>
+      <SEO title="Home | Accrual Research | Blockchain Consulting"/>
       <Hero />
       <IndexPageTemplate
         about={frontmatter.about}

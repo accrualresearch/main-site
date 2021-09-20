@@ -46,7 +46,7 @@ const JobPost = ({ data }) => {
 
   return (
     <Layout headerPosition="sticky" bg="white">
-      <SEO title={`${post.frontmatter.title} | Accrual Research`}/>
+      <SEO title={`${post.frontmatter.title} | Accrual Research | Blockchain Consulting`}/>
       <JobPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
