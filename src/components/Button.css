@@ -55,6 +55,12 @@
   border: none;
 }
 
+@media (min-width: 801px) {
+  .ar-button.none {
+    font-size: 30px;
+  }  
+}
+
 .ar-button.none:hover {
   color: rgb(255, 255, 255, 0.5);
 }
