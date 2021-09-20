@@ -46,7 +46,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: "/static/preview.png",
+          content: "/preview.png",
         },
         {
           name: `twitter:card`,
