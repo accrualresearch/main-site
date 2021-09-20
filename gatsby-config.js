@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Accrual Research`,
     description: `Blockchain is disrupting finance, producing a future where digital assets have no bounds. The result will be a more equitable and empowered world. Accrual Research is turning this future into reality.`,
-    siteUrl: `https://accrual-research.netlify.app/`,
+    siteUrl: `https://www.accrualresearch.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
