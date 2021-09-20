@@ -123,6 +123,17 @@
   } 
 }
 
+
+@media (min-width: 1600px) {
+  .hero-container .column-2 .inner-1 .row.top {
+    background-size: 30%;
+  }
+
+  .hero-container .column-2 .inner-2 .row.top {
+    background-size: 30%;
+  }
+}
+
 .hero-container a {
   text-decoration: none;
   color: white;
