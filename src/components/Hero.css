@@ -103,21 +103,21 @@
   background-image: url("../img/pulsebot.svg");
 }
 
-.hero-container .column-2 .inner-1 .row.top {
-  background-image: url("../img/Element_6.svg");
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  background-size: 50%;
-}
-
-.hero-container .column-2 .inner-2 .row.top {
-  background-image: url("../img/Element_5.svg");
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  background-size: 50%;
-}
 
 @media (min-width: 801px) {
+  .hero-container .column-2 .inner-1 .row.top {
+    background-image: url("../img/Element_6.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 50%;
+  }
+
+  .hero-container .column-2 .inner-2 .row.top {
+    background-image: url("../img/Element_5.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 50%;
+  }
   .hero-container .column-1 h1 {
     font-size: 50px;
   } 
@@ -138,9 +138,6 @@
 }
 
 @media (max-width: 800px) {
-  .column-2 .row.top {
-    background-image: none;
-  }
   .column-1 .row.bottom {
     flex-direction: column;
   }
