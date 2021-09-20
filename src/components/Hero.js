@@ -3,6 +3,7 @@ import "./Hero.css"
 import heroMp4 from "../img/Hero_video.mp4"
 import heroWebm from "../img/Hero_video.webm"
 import Button from "../components/Button"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export const Container = ({ children, bg, text }) => (
   <div className="hero-container" style={{
@@ -18,10 +19,25 @@ const Grid = () => (
   <Container text="white">
     <div className="hero-column column-1 hero-item">
       <div className="row top">
-        <h1 className="bold-text">Next Level <br /> Blockchain Products</h1>
+        <AnchorLink to="/#products">
+          <h1 className="bold-text">Next Level <br /> Blockchain Products</h1>
+        </AnchorLink>
       </div>
       <div className="row middle">
+        <div className="logos-container">
+          <div className="logos-item chainpulse">
 
+          </div>
+          <div className="logos-item pulsebot">
+
+          </div>
+          <div className="logos-item">
+
+          </div>
+          <div className="logos-item">
+
+          </div>
+        </div>
       </div>
       <div className="row bottom">
         <div className="column left">
@@ -46,7 +62,9 @@ const Grid = () => (
 
           </div>
           <div className="row middle">
-            <h2 className="bold-text">Consulting</h2>
+            <AnchorLink to="/#consulting">
+              <h2 className="bold-text">Consulting</h2>
+            </AnchorLink>
           </div>
           <div className="row bottom">
             <Button variant="none" color="white" link="/#consulting">
@@ -62,10 +80,12 @@ const Grid = () => (
 
           </div>
           <div className="row middle">
-            <h2 className="bold-text">Data Driven Analysis</h2>
+            <AnchorLink to="/#careers">
+              <h2 className="bold-text">Join Accrual</h2>
+            </AnchorLink>
           </div>
           <div className="row bottom">
-            <Button variant="none" color="white" link="/#">
+            <Button variant="none" color="white" link="/#careers">
               →
             </Button>
           </div>

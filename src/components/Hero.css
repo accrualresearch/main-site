@@ -69,6 +69,74 @@
   flex-basis: 5%;
 }
 
+.column-1 .row.bottom {
+  justify-content: space-around;
+  width: 75%;
+}
+
+@media (max-width: 1800px) {
+  .column-1 .row.bottom {
+    width: 100%;
+  }
+}
+
+.hero-container .column-1 .row.middle .logos-container {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hero-container .column-1 .row.middle .logos-item {
+  flex-basis: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80%;
+}
+
+.logos-item.chainpulse {
+  background-image: url("../img/chainpulse.svg");
+}
+
+.logos-item.pulsebot {
+  background-image: url("../img/pulsebot.svg");
+}
+
+.hero-container .column-2 .inner-1 .row.top {
+  background-image: url("../img/Element_6.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 50%;
+}
+
+.hero-container .column-2 .inner-2 .row.top {
+  background-image: url("../img/Element_5.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 50%;
+}
+
+@media (min-width: 801px) {
+  .hero-container .column-1 h1 {
+    font-size: 50px;
+  } 
+}
+
+.hero-container a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0;
+}
+
+.hero-container a:hover {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.hero-contianer a:active {
+  color: black;
+}
+
 @media (max-width: 800px) {
   .column-1 .row.bottom {
     flex-direction: column;
