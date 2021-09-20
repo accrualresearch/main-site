@@ -109,20 +109,35 @@
     background-image: url("../img/Element_6.svg");
     background-repeat: no-repeat;
     background-position: 0% 50%;
-    background-size: 50%;
+    background-size: 40%;
   }
 
   .hero-container .column-2 .inner-2 .row.top {
     background-image: url("../img/Element_5.svg");
     background-repeat: no-repeat;
     background-position: 0% 50%;
-    background-size: 50%;
+    background-size: 40%;
   }
   .hero-container .column-1 h1 {
     font-size: 50px;
   } 
 }
 
+.hero-container h2 {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 1400px) {
+  .hero-container .column-1 h1 {
+    font-size: 30px;
+  } 
+  .hero-container .column-2 .hero-item {
+    padding: 25px
+  }
+  .hero-container h2 {
+    font-size: 20px;
+  }
+}
 
 @media (min-width: 1600px) {
   .hero-container .column-2 .inner-1 .row.top {

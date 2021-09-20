@@ -51,7 +51,7 @@ export const IndexPageTemplate = ({
 
     <div className="container product pulsebot">
       <div className="inner">
-        <div className="item image" style={{backgroundColor: "blue"}}>
+        <div className="item image" style={{backgroundColor: "white"}}>
         </div>
         <div className="item text">
           <h1>{product1.heading}</h1>
