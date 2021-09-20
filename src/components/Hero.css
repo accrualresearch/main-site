@@ -138,6 +138,9 @@
 }
 
 @media (max-width: 800px) {
+  .column-2 .row.top {
+    background-image: none;
+  }
   .column-1 .row.bottom {
     flex-direction: column;
   }
