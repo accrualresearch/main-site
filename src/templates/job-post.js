@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SEO from "../components/SEO"
+import "./job-post.css"
 
 export const JobPostTemplate = ({
   content,
@@ -16,9 +17,9 @@ export const JobPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="container">
+    <section className="job-post-container">
       {helmet || ''}
-      <div className="inner">
+      <div className="job-post-inner">
         <div>
           <div>
             <h1>

@@ -1,0 +1,18 @@
+.job-post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.job-post-inner {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+@media (max-width: 800px) {
+  .job-post-inner {
+    width: 90vw;
+  }
+}
