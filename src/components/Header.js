@@ -53,7 +53,7 @@ const Header = ({ siteTitle, headerPosition, bg }) => {
         <nav className="inner">
           <div className="site-logo">
             <Link to="/">
-              <img src={bg === "white" ? logo : logoWhite} width={150} alt={siteTitle} />
+              <img className="header-logo" src={bg === "white" ? logo : logoWhite} alt={siteTitle} />
             </Link>
           </div>
           <div className="nav-links">
