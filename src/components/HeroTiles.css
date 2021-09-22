@@ -370,7 +370,6 @@ ul li a {
   .duo-item {
     margin-right: 1vw;
   }
-  
   .tiles-inner,
   .nav-inner {
     margin: 0%;
@@ -449,6 +448,10 @@ ul li a {
   .mob-nav-column li {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .top-column,
+  .duo-row.bottom {
+    margin-right: 40px;
   }
 }
 
