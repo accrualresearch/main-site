@@ -7,7 +7,7 @@ import HeroTiles from "../components/HeroTiles"
 const Hero = () => (
   <>
     <section className="heroVideoSection">
-      <video className="heroVideo" autoPlay muted loop>
+      <video className="heroVideo" autoPlay muted loop playsInline>
         <source src={heroMp4} type="video/mp4" />
         <source src={heroWebm} type="video/webm" />
       </video>
