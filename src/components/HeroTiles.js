@@ -39,7 +39,6 @@ const NavLinks = () => (
 const HeroTiles = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
-    console.log(open)
     setOpen(!open);
   }
   return (
